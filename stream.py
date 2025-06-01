@@ -22,7 +22,7 @@ st.title("🍦Ice Cream Sales Predictor")
 
 st.markdown("### Predict ice cream sales based on temperature 🧊")
 
-a = pd.read_csv("C:/Users/Welcome/Desktop/data_set/iceVtemp.csv")
+a = pd.read_csv("iceVtemp.csv")
 df = pd.DataFrame(a)
 X,y = df[["Temperature"]],df[["Ice Cream Profits"]]
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2)
